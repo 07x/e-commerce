@@ -20,8 +20,6 @@ pip-delete-this-directory.txt
 # PyInstaller
 __pyinstaller/
 
-# Jupyter Notebook
-.ipynb_checkpoints/
 
 # vscode settings
 .vscode/

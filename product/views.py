@@ -8,7 +8,6 @@ from rest_framework.permissions import IsAuthenticated
 from .serializers import ProductSerializer, SelectedProductSerializer
 from .models import Product, SelectedProduct
 
-# # Create your views here.
 class ProductListAPIView(APIView):
     def get(self, request, *args, **kwargs):
         # Get parameters from the request
