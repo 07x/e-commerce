@@ -21,14 +21,11 @@ class AdminLoginView(APIView):
         check = user.check_password(password)
 
         if not check:
-<<<<<<< HEAD
             return Response({'message': "Your password is not correct", 'response_code': 201}, status=status.HTTP_400_BAD_REQUEST)
-=======
             return Response({'message': "Your password is not correct", 'response_code': 400}, status=status.HTTP_400_BAD_REQUEST)
->>>>>>> 70a19ac (updated_commit_01)
 
         if user and check:
-           
+
             refresh = RefreshToken.for_user(user)
             access_token = refresh.access_token
 
